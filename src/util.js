@@ -8,7 +8,8 @@ function chillHop() {
       artist: "Aso, Middle School, Aviino",
       audio: "https://mp3.chillhop.com/serve.php/?mp3=10075",
       color: ["#205950", "#2ab3bf"],
-      id: uuidv4(),
+      // id: uuidv4(),
+      id: 1,
       active: true,
     },
     {
