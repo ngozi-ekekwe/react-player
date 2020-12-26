@@ -18,7 +18,9 @@ const Player = ({ isPlaying, setIsPlaying, audioRef, setSongInfo, songInfo }) =>
   };
 
   const getTime = (time) => {
-    return Math.floor(time / 60) + ":" + ("0" + Math.floor(time % 60));
+    let leftSide = Math.floor(time / 60);
+    let rightSide = `0:${Math.floor(time % 60)}`;
+    return `${leftSide}:${rightSide}`
   };
 
   const dragHandler = (event) => {
